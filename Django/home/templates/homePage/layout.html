@@ -5,46 +5,79 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Zolet Advocacia</title>
-		<link rel="stylesheet" href="static'/'" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
 	</head>
 	<body>
 		<header>
-			<nav>
-				<a target="_blank">Início</a>
-				<button>Quem Somos</button>
-				<picture>FOTO DA LOGO</picture>
-				<button>Area de Atuação</button>
-				<button>Equipe</button>
+			<nav
+				class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body"
+				data-bs-theme="dark"
+			>
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">ZOLET ADVOCACIA</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#"
+									>Quem somos</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Área de Atuação</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</header>
 		<main>{% block body %} {% endblock body %}</main>
 		<footer>
 			<section>
-				<h2>Zolet Advocacia</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-					repudiandae harum exercitationem consequuntur tempore ut laudantium
-					iure expedita. Maxime nesciunt dolorum ea aliquam eaque facilis
-					debitis voluptatibus cupiditate nobis quibusdam?
-				</p>
-				<p>Espaço reservado para botoes com midias sociais</p>
-			</section>
-			<section>
-				<h2>Informações</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nobis
-					minus beatae in ipsa et recusandae ipsam culpa nulla aliquid excepturi
-					consequuntur cupiditate, ut, nemo voluptas similique veniam? Magni,
-					et?
-				</p>
-				<p>Telefone: (54) 9-9632-1721 ou (54) 9-9619-0690</p>
-				<p>E-mail: zolet.advocacia@gmail.com</p>
-				<p>
-					Endereço: Rua Henrique Lenzi, nº 490, Centro, Nova Prata - RS, CEP:
-					95320-000
-				</p>
-				<p>Horário de atendimento: 09:00 às 18:00</p>
+				
+
+				{% comment %} COmeco {% endcomment %}
+				<div class="card-group">
+					<div class="card text-bg-dark mb-3">
+						<div class="card-header">
+							Informações:
+						</div>
+						<div class="card-body">
+						  <h5 class="card-title">Entre em contato.</h5>
+						  <p class="card-text">								
+							<p>Telefone: (54) 9-9632-1721 ou (54) 9-9619-0690</p>
+						  <p>E-mail: zolet.advocacia@gmail.com</p>
+						  <p>
+							  Endereço: Rua Henrique Lenzi, nº 490, Centro, Nova Prata - RS, CEP:
+							  95320-000
+						  </p>
+						  <p>Horário de atendimento: 09:00 às 18:00</p></p>
+						  <a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					  </div>
+				</div>
+				{% comment %} Fim {% endcomment %}
 			</section>
 		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
