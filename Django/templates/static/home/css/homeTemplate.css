@@ -1,5 +1,5 @@
+{% load static %}
 {% comment %} GERAL {% endcomment %}
-
 html,
 body {
   height: 100%;
@@ -108,6 +108,7 @@ body {
   line-height: 22px;
 }
 {% comment %} SLIDE {% endcomment %}
+
 #carouselExampleFade{  
 	width: 100%;
 	height: 100vh;

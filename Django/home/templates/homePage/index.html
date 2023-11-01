@@ -1,56 +1,64 @@
-{% extends "homepage/layout.html" %} {%block body%}
-<div id="carouselExampleFade" class="carousel slide carousel-fade">
+{% extends "homepage/layout.html" %}{%block body%}{% load static %}
+<div
+	id="carouselExampleFade"
+	class="carousel slide carousel-fade"
+	data-bs-ride="carousel"
+	data-bs-interval="4000"
+>
 	<div class="carousel-inner">
 		<div
 			class="carousel-item active"
-			style="background-image: url(/static/home/img/1.jpg)"
+			style="background-image: url('{% static 'home/img/1.jpg' %}')"
 		>
 			<div class="carousel-container">
 				<div class="container">
+					<h2 class="animate__animated animate__fadeInDown">
+						Conheça a excelência em advocacia!
+					</h2>
 					<p class="animate__animated animate__fadeInUp">
-						Conheça a excelência em advocacia! Venha descobrir como podemos
-						proteger seus interesses e garantir a transformação de desafios em
-						soluções eficazes!
+						Venha descobrir como podemos proteger seus interesses e garantir a
+						transformação de desafios em soluções eficazes!
 					</p>
 					<a
 						href="#about"
-						class="btn-get-started scrollto animate__animated animate__fadeInUp"
-						>Vamos lá!</a
+						class="btn-get-started animate__animated animate__fadeInUp"
+						>Vamos lá</a
 					>
 				</div>
 			</div>
 		</div>
 		<div
 			class="carousel-item"
-			style="background-image: url(/static/home/img/2.jpeg)"
+			style="background-image: url('{% static 'home/img/2.jpeg' %}')"
 		>
 			<div class="carousel-container">
 				<div class="container">
 					<h2 class="animate__animated animate__fadeInDown">
-						Nossas Áreas de Atuação
+						Estamos preparados para atender todas as suas necessidades legais.
 					</h2>
 					<p class="animate__animated animate__fadeInUp">
-						Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+						Conheça nossas áreas de atuação e encontre a segurança jurídica que
+						você merece.
 					</p>
 					<a
 						href="#about"
 						class="btn-get-started scrollto animate__animated animate__fadeInUp"
-						>Get Started</a
+						>Vamos lá</a
 					>
 				</div>
 			</div>
 		</div>
 		<div
 			class="carousel-item"
-			style="background-image: url(/static/home/img/3.jpg)"
+			style="background-image: url('{% static 'home/img/3.jpg' %}')"
 		>
 			<div class="carousel-container">
 				<div class="container">
 					<h2 class="animate__animated animate__fadeInDown">
-						Temporibus autem quibusdam
+						Estamos prontos para ser sua voz na busca pela justiça.
 					</h2>
 					<p class="animate__animated animate__fadeInUp">
-						Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+						Saiba mais sobre os advogados que farão a diferença em seu caso
 					</p>
 					<a
 						href="#about"
