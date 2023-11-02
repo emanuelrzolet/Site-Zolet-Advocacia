@@ -12,13 +12,6 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="{% static 'home/css/homeTemplate.css'%}">
-		  <!-- Vendor CSS Files -->
-		  {% comment %} <link href="/static/home/css/vendor/animate.css/animate.min.css" rel="stylesheet">
-		  <link href="/static/home/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		  <link href="/static/home/css/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-		  <link href="/static/home/css/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-		  <link href="/static/home/css/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-		  <link href="/static/home/css/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> {% endcomment %}
 	</head>
 	<body>
 		<header>
@@ -42,12 +35,15 @@
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#"
+								<a class="nav-link" href="{% url "home:index" %}">Início</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="{% url "about:index" %}"
 									>Quem somos</a
 								>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Área de Atuação</a>
+								<a class="nav-link" href="{% url "services:index" %}">Área de Atuação</a>
 							</li>
 						</ul>
 					</div>
