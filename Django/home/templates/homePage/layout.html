@@ -20,7 +20,7 @@
 				data-bs-theme="dark"
 			>
 				<div class="container-fluid">
-					<a class="navbar-brand" href="#">ZOLET ADVOCACIA</a>
+					<a class="navbar-brand" href="{% url "home:index" %}">ZOLET ADVOCACIA</a>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -50,35 +50,8 @@
 				</div>
 			</nav>
 		</header>
-		<main>
-			{% block body %} {% endblock body %}</main>
-		<footer>
-			<section>
-				
-
-				{% comment %} COmeco {% endcomment %}
-				<div class="card-group">
-					<div class="card text-bg-dark mb-3">
-						<div class="card-header">
-							Informações:
-						</div>
-						<div class="card-body">
-						  <h5 class="card-title">Entre em contato.</h5>
-						  <p class="card-text">								
-							<p>Telefone: (54) 9-9632-1721 ou (54) 9-9619-0690</p>
-						  <p>E-mail: zolet.advocacia@gmail.com</p>
-						  <p>
-							  Endereço: Rua Henrique Lenzi, nº 490, Centro, Nova Prata - RS, CEP:
-							  95320-000
-						  </p>
-						  <p>Horário de atendimento: 09:00 às 18:00</p></p>
-						  <a href="#" class="btn btn-primary">Go somewhere</a>
-						</div>
-					  </div>
-				</div>
-				{% comment %} Fim {% endcomment %}
-			</section>
-		</footer>
+			{% block body %} {% endblock body %}
+		
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

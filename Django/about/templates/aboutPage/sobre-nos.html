@@ -10,10 +10,7 @@
 	<body> {% endcomment %}
 {% block body %}
 {% load static %}
-<header>
-	<h1>Escritório Zolet Advocacia</h1>
-</header>
-<main>
+<main id="about">
 	<br />
 	<p class="iniP">
 		Na vida, enfrentamos desafios legais que podem
@@ -66,10 +63,8 @@
 		legal.
 	</p>
 	<br>
-	<div class="img">
 		<img 
 		src="{% static 'about/img/marca-pequena.jpg' %}" alt="Foto da marca">
-	</div>
 	<br>
 	<h2>Nossas Áreas de Atuação:</h2>
 	<br>
@@ -84,10 +79,10 @@
 		determinação, paixão e competência.
 	</p>
 	<br>
-	<div class="img">
+	
 		<img src="{% static 'about/img/note-pequena.jpg' %}"
 		alt="note-pequena">
-	</div>
+	
 	<h2>Entre em Contato Conosco:</h2>
 	<br>
 	<p class="iniP">
@@ -104,10 +99,6 @@
 	</p>
 	<br>
 </main>
-<footer>
-	<img src="{% static 'about/img/rodape.jpg' %}"
-	alt="Rodapé">
-</footer>
 </body>
 </html>
 
