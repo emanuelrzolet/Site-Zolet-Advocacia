@@ -10,7 +10,7 @@ a:focus {
 
 img {
   width: 100%;
-  height: auto;
+  height: 15vh;
 }
 
 .fix {
@@ -37,11 +37,13 @@ h6 {
 h1 {
   font-size: 48px;
   line-height: 50px;
+  text-align: center;
 }
 
 h2 {
   font-size: 38px;
   line-height: 40px;
+  text-align: center;
 }
 
 h3 {
@@ -239,6 +241,14 @@ body {
 /* Espaçamento do paragrafo porém com valor reduzido para os itens que parecem com listas */
 .iniC {
   text-indent: 15px;
+}
+
+#about {
+  padding-top: 15px;
+}
+
+#services {
+  padding: 15px;
 }
 
 /*# sourceMappingURL=homeTemplate.css.map */
