@@ -1,27 +1,24 @@
-{% load static %}
-{% comment %} GERAL {% endcomment %}
 html,
 body {
-  height: 100%;
-
+	height: 100%;
 }
 
 a:focus {
-  outline: 0px solid;
+	outline: 0px solid;
 }
 
 img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 .fix {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 p {
-  margin: 0 0 15px;
-  color: #444;
+	margin: 0 0 15px;
+	color: #444;
 }
 
 h1,
@@ -30,226 +27,238 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
-  margin: 0 0 15px;
-  color: #444;
-  font-weight: 500;
+	font-family: "Raleway", sans-serif;
+	margin: 0 0 15px;
+	color: #444;
+	font-weight: 500;
 }
 
 h1 {
-  font-size: 48px;
-  line-height: 50px;
+	font-size: 48px;
+	line-height: 50px;
 }
 
 h2 {
-  font-size: 38px;
-  line-height: 40px;
+	font-size: 38px;
+	line-height: 40px;
 }
 
 h3 {
-  font-size: 30px;
-  line-height: 32px;
+	font-size: 30px;
+	line-height: 32px;
 }
 
 h4 {
-  font-size: 24px;
-  line-height: 26px;
+	font-size: 24px;
+	line-height: 26px;
 }
 
 h5 {
-  font-size: 20px;
-  line-height: 22px;
+	font-size: 20px;
+	line-height: 22px;
 }
 
 h6 {
-  font-size: 16px;
-  line-height: 20px;
+	font-size: 16px;
+	line-height: 20px;
 }
 
 a {
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
 }
 
 a:hover {
-  color: #3EC1D5;
-  text-decoration: none;
+	color: #3ec1d5;
+	text-decoration: none;
 }
 
 a:active,
 a:hover {
-  outline: 0 none;
+	outline: 0 none;
 }
 
 body {
-  color: #444;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  text-align: left;
-  overflow-x: hidden;
-  line-height: 22px;
+	color: #444;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	text-align: left;
+	overflow-x: hidden;
+	line-height: 22px;
 }
-{% comment %} SLIDE {% endcomment %}
 
-#carouselExampleFade{  
+#carouselExampleFade {
 	width: 100%;
 	height: 100vh;
-	
+
 	overflow: hidden;
-	position: relative;}
+	position: relative;
+}
 
+@media (max-height: 500px) {
+	#carouselExampleFade {
+		height: 100vh;
+	}
+}
 
-	@media (max-height: 500px) {
-		#carouselExampleFade {
-		  height: 150vh;
-		}
-	  }
-	  
-	  #carouselExampleFade .carousel,
-	  #carouselExampleFade .carousel-inner,
-	  #carouselExampleFade .carousel-item,
-	  #carouselExampleFade .carousel-item::before {
-		position: absolute;
-		top: 0;
-		right: 0;
-		left: 0;
-		bottom: 0;
-	  }
-	  
-	  #carouselExampleFade .carousel-item {
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	  }
-	  
-	  #carouselExampleFade .carousel-item::before {
-		content: "";
-		background-color: rgba(0, 0, 0, 0.7);
-	  }
-	  
-	  #carouselExampleFade .carousel-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: absolute;
-		bottom: 0;
-		top: 70px;
-		left: 50px;
-		right: 50px;
-	  }
-	  
-	  #carouselExampleFade .container {
-		text-align: center;
-	  }
-	  
-	  #carouselExampleFade h2 {
-		color: #fff;
-		margin-bottom: 20px;
-		font-size: 24px;
-		font-weight: 700;
-	  }
-	  
-	  @media (max-width: 768px) {
-		#carouselExampleFade h2 {
-		  font-size: 20px;
-		  line-height: 1.2;
-		}
-	  }
-	  
-	  #carouselExampleFade p {
-		width: 80%;
-		font-size: 38px;
+#carouselExampleFade .carousel,
+#carouselExampleFade .carousel-inner,
+#carouselExampleFade .carousel-item,
+#carouselExampleFade .carousel-item::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+#carouselExampleFade .carousel-item {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#carouselExampleFade .carousel-item::before {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+#carouselExampleFade .carousel-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	top: 70px;
+	left: 50px;
+	right: 50px;
+}
+
+#carouselExampleFade .container {
+	text-align: center;
+}
+
+#carouselExampleFade h2 {
+	color: #fff;
+	margin-bottom: 20px;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+@media (max-width: 768px) {
+	#carouselExampleFade h2 {
+		font-size: 20px;
 		line-height: 1.2;
-		margin: 0 auto 30px auto;
+	}
+}
+
+#carouselExampleFade p {
+	width: 80%;
+	font-size: 38px;
+	line-height: 1.2;
+	margin: 0 auto 30px auto;
+	color: #fff;
+}
+
+@media (min-width: 1024px) {
+	#carouselExampleFade p {
+		width: 60%;
+	}
+}
+
+@media (max-width: 768px) {
+	#carouselExampleFade p {
+		font-size: 28px;
+		line-height: 1.2;
+	}
+	#carouselExampleFade .carousel-fade {
+		overflow: hidden;
+	}
+
+	#carouselExampleFade .carousel-fade .carousel-inner .carousel-item {
+		transition-property: opacity;
+	}
+
+	#carouselExampleFade .carousel-fade .carousel-inner .carousel-item,
+	#carouselExampleFade
+		.carousel-fade
+		.carousel-inner
+		.active.carousel-item-start,
+	#carouselExampleFade
+		.carousel-fade
+		.carousel-inner
+		.active.carousel-item-end {
+		opacity: 0;
+	}
+
+	#carouselExampleFade .carousel-fade .carousel-inner .active,
+	#carouselExampleFade
+		.carousel-fade
+		.carousel-inner
+		.carousel-item-next.carousel-item-start,
+	#carouselExampleFade
+		.carousel-fade
+		.carousel-inner
+		.carousel-item-prev.carousel-item-end {
+		opacity: 1;
+		transition: 0.5s;
+	}
+
+	#carouselExampleFade .carousel-fade .carousel-inner .carousel-item-next,
+	#carouselExampleFade .carousel-fade .carousel-inner .carousel-item-prev,
+	#carouselExampleFade
+		.carousel-fade
+		.carousel-inner
+		.active.carousel-item-start,
+	#carouselExampleFade
+		.carousel-fade
+		.carousel-inner
+		.active.carousel-item-end {
+		left: 0;
+		transform: translate3d(0, 0, 0);
+	}
+
+	#carouselExampleFade .carousel-control-prev,
+	#carouselExampleFade .carousel-control-next {
+		width: 10%;
+	}
+
+	@media (min-width: 1024px) {
+		#carouselExampleFade .carousel-control-prev,
+		#carouselExampleFade .carousel-control-next {
+			width: 5%;
+		}
+	}
+
+	#carouselExampleFade .carousel-control-next-icon,
+	#carouselExampleFade .carousel-control-prev-icon {
+		background: none;
+		font-size: 32px;
+		line-height: 1;
+	}
+
+	#carouselExampleFade .carousel-indicators li {
+		cursor: pointer;
+		list-style-type: none;
+	}
+
+	#carouselExampleFade .btn-get-started {
+		font-weight: 500;
+		font-size: 16px;
+		letter-spacing: 1px;
+		display: inline-block;
+		padding: 8px 32px;
+		border-radius: 50px;
+		transition: 0.5s;
+		margin: 10px;
 		color: #fff;
-	  }
-	  
-	  @media (min-width: 1024px) {
-		#carouselExampleFade p {
-		  width: 60%;
-		}
-	  }
-	  
-	  @media (max-width: 768px) {
-		#carouselExampleFade p {
-		  font-size: 28px;
-		  line-height: 1.2;
-		}
-		#carouselExampleFade .carousel-fade {
-			overflow: hidden;
-		  }
-		  
-		  #carouselExampleFade .carousel-fade .carousel-inner .carousel-item {
-			transition-property: opacity;
-		  }
-		  
-		  #carouselExampleFade .carousel-fade .carousel-inner .carousel-item,
-		  #carouselExampleFade .carousel-fade .carousel-inner .active.carousel-item-start,
-		  #carouselExampleFade .carousel-fade .carousel-inner .active.carousel-item-end {
-			opacity: 0;
-		  }
-		  
-		  #carouselExampleFade .carousel-fade .carousel-inner .active,
-		  #carouselExampleFade .carousel-fade .carousel-inner .carousel-item-next.carousel-item-start,
-		  #carouselExampleFade .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-end {
-			opacity: 1;
-			transition: 0.5s;
-		  }
-		  
-		  #carouselExampleFade .carousel-fade .carousel-inner .carousel-item-next,
-		  #carouselExampleFade .carousel-fade .carousel-inner .carousel-item-prev,
-		  #carouselExampleFade .carousel-fade .carousel-inner .active.carousel-item-start,
-		  #carouselExampleFade .carousel-fade .carousel-inner .active.carousel-item-end {
-			left: 0;
-			transform: translate3d(0, 0, 0);
-		  }
-		  
-		  #carouselExampleFade .carousel-control-prev,
-		  #carouselExampleFade .carousel-control-next {
-			width: 10%;
-		  }
-		  
-		  @media (min-width: 1024px) {
-		  
-			#carouselExampleFade .carousel-control-prev,
-			#carouselExampleFade .carousel-control-next {
-			  width: 5%;
-			}
-		  }
-		  
-		  #carouselExampleFade .carousel-control-next-icon,
-		  #carouselExampleFade .carousel-control-prev-icon {
-			background: none;
-			font-size: 32px;
-			line-height: 1;
-		  }
-		  
-		  #carouselExampleFade .carousel-indicators li {
-			cursor: pointer;
-			list-style-type: none;
-		  }
-		  
-		  #carouselExampleFade .btn-get-started {
-			font-weight: 500;
-			font-size: 16px;
-			letter-spacing: 1px;
-			display: inline-block;
-			padding: 8px 32px;
-			border-radius: 50px;
-			transition: 0.5s;
-			margin: 10px;
-			color: #fff;
-			background: #3ec1d5;
-		  }
-		  
-		  #carouselExampleFade .btn-get-started:hover {
-			background: #fff;
-			color: #3ec1d5;
-		  }
-		  
+		background: #3ec1d5;
+	}
 
-{% comment %} OUTRAS PAGINAS {% endcomment %}
-
+	#carouselExampleFade .btn-get-started:hover {
+		background: #fff;
+		color: #3ec1d5;
+	}
 }
 /* Espaçamento do paragrafo */
 .iniP {
