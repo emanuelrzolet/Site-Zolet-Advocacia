@@ -263,6 +263,18 @@ footer {
   justify-content: space-between;
 }
 
+/* Estilos para dispositivos com largura de tela até 767 pixels (geralmente smartphones) */
+@media only screen and (max-width: 767px) {
+  div#Whatsapp > a > img {
+    padding: 0px;
+    height: 50px;
+    width: 50px;
+  }
+  footer > div#Maps > a > img {
+    height: 50px;
+    width: 50px;
+  }
+}
 div#Whatsapp > a > img {
   padding: 0px;
   height: 80px;
