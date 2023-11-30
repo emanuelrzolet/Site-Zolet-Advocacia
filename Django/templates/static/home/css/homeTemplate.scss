@@ -294,12 +294,20 @@ footer {
 @media only screen and (max-width: 767px) {
 	div#Whatsapp > a > img {
 		padding: 0px;
-		height: 50px;
-		width: 50px;
+		height: 40px;
+		width: 40px;
+	}
+	div#Whatsapp > p {
+		font-size: 0.3em;
+		text-align: center;
 	}
 	footer > div#Maps > a > img {
-		height: 50px;
-		width: 50px;
+		height: 40px;
+		width: 40px;
+	}
+	footer > div#Maps > p {
+		font-size: 0.3em;
+		text-align: center;
 	}
 }
 //Estilo padrao
@@ -323,7 +331,7 @@ footer > div#Maps > p {
 footer > div#Contatos {
 	color: White;
 	text-align: end;
-	font-size: 0.9em;
+	font-size: 0.7em;
 
 }
 #Contatos{
