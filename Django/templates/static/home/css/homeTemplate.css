@@ -270,7 +270,7 @@ footer {
     width: 40px;
   }
   div#Whatsapp > p {
-    font-size: 0.3em;
+    font-size: 0.1em;
     text-align: center;
   }
   footer > div#Maps > a > img {
@@ -278,7 +278,7 @@ footer {
     width: 40px;
   }
   footer > div#Maps > p {
-    font-size: 0.3em;
+    font-size: 0.1em;
     text-align: center;
   }
   footer > div#Contatos {
@@ -294,7 +294,7 @@ div#Whatsapp > a > img {
 }
 
 div#Whatsapp > p {
-  font-size: 0.2em;
+  font-size: 0.1em;
   text-align: center;
 }
 
@@ -304,14 +304,14 @@ footer > div#Maps > a > img {
 }
 
 footer > div#Maps > p {
-  font-size: 0.2em;
+  font-size: 0.1em;
   text-align: center;
 }
 
 footer > div#Contatos {
   color: White;
   text-align: end;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 #Contatos p {
