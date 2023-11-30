@@ -281,6 +281,11 @@ footer {
     font-size: 0.3em;
     text-align: center;
   }
+  footer > div#Contatos {
+    color: White;
+    text-align: end;
+    font-size: 0.7em;
+  }
 }
 div#Whatsapp > a > img {
   padding: 0px;
@@ -306,7 +311,7 @@ footer > div#Maps > p {
 footer > div#Contatos {
   color: White;
   text-align: end;
-  font-size: 0.7em;
+  font-size: 0.9em;
 }
 
 #Contatos p {
