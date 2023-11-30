@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-544i_-f-27%wz0ato%a20%1q047hfys$z2f+-j_7cj4jgaxv-b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['zoletadvocacia.com','emanuelzolet.tech', '3.138.220.11','127.0.0.1','3.19.86.220', 'ip-172-31-8-21.us-east-2.compute.internal']
+ALLOWED_HOSTS = ['zoletadvocacia.com','emanuelzolet.tech', '3.138.220.11','127.0.0.1','3.19.86.220', 'ip-172-31-8-21.us-east-2.compute.internal','5.199.162.214']
 
 
 # Application definition
